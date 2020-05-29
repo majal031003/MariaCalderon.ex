@@ -50,3 +50,4 @@ public class Registro extends AppCompatActivity {
         Toast.makeText(getApplicationContext(), "USUARIO CONECTADO: estudiante2020 ", Toast.LENGTH_LONG).show();
     }
 }
+
