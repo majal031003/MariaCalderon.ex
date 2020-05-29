@@ -9,20 +9,25 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class Login extends AppCompatActivity {
-    EditText usuario, contraseña;
+    EditText usuario, contrasenia;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         usuario = findViewById(R.id.etUsuario);
-        contraseña = findViewById(R.id.etContraseña);
+        contrasenia = findViewById(R.id.etContraseña);
     }
     public void log(View v) {
-        if (usuario.getText().toString().equals("estudiante2020") && contraseña.getText().toString().equals("uisrael2020")) {
+
+        if (usuario.getText().toString().equals("estudiante2020") && contrasenia.getText().toString().equals("uisrael2020")) {
             Toast.makeText(getApplicationContext(), "USUARIO CONECTADO: estudiante2020 ", Toast.LENGTH_LONG).show();
+
+
             Intent intentEnvio = new Intent(Login.this,Registro.class);
             intentEnvio.putExtra("datoUsuario", usuario.getText().toString());
             startActivity(intentEnvio);
+
+
         } else {
             Toast.makeText(getApplicationContext(), "DATO INCORRECTO", Toast.LENGTH_LONG).show();
         }
