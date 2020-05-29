@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">MariaCalderon.examen</string>
+    <string name="text1">USUARIO</string>
+    <string name="text2">CONTRASEÑA</string>
+    <string name="text3">INICIAR SESION</string>
+    <string name="text4">NOMBRE:</string>
+    <string name="text5">MONTO INICIAL:</string>
+    <string name="text6">PAGO MENSUAL:</string>
+    <string name="text7">GUARDAR</string>
+    <string name="text8">CALCULAR</string>
+    <string name="text9">¿Por qué eligió este centro?</string>
+    <string name="text10">¿Qué deportes practica?</string>
+    <string name="text11">FUTBOL</string>
+    <string name="text12">BASQUET</string>
+    <string name="text13">NATACION</string>
+    <string name="text14">¿Está interesado en aprender otro idioma aparte de inglés?</string>
+    <string name="text15">SI</string>
+    <string name="text16">NO</string>
+    <string name="text17">ENVIAR</string>
+
 </resources>
