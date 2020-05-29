@@ -29,8 +29,6 @@ public class Registro extends AppCompatActivity {
         setContentView(R.layout.activity_registro);
 
         tvUsuario = findViewById(R.id.tvUsuario);
-
-        //Recibiendo el usuario
         usuarioRecibido = getIntent().getExtras();
         recibirUsuario = usuarioRecibido.getString("datoUsuario");
         tvUsuario.setText(recibirUsuario);

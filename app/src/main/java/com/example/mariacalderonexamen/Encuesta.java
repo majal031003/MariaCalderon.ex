@@ -18,12 +18,9 @@ public class Encuesta extends AppCompatActivity {
     CheckBox cba,cbb, cbc;
     RadioButton rba,rbb;
 
-    //Datos de registro recibidos
     Bundle dRecibidos;
     ArrayList<String> rDatos;
 
-
-    //Datos del Usuario
     TextView tvUsuario;
     String nombre;
     String total;
@@ -43,16 +40,9 @@ public class Encuesta extends AppCompatActivity {
         rDatos = dRecibidos.getStringArrayList("R");
         Object[] datos = rDatos.toArray();
 
-
-
         tvUsuario.setText("Usuario: "+datos[0].toString());
         nombre = datos[1].toString();
         total = datos[2].toString();
-
-
-
-
-
         ingreso = findViewById(R.id.etResp);
         cba= findViewById(R.id.cb1);
         cbb= findViewById(R.id.cb2);
@@ -69,9 +59,6 @@ public class Encuesta extends AppCompatActivity {
         alf.add(total);
 
         Intent intentEnvio = new Intent(Encuesta.this, Resumen.class);
-
-
-
         if (cba.isChecked() == true) {
             alf.add(cba.getText().toString());
 

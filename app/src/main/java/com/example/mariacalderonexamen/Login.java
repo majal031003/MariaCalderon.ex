@@ -22,11 +22,9 @@ public class Login extends AppCompatActivity {
         if (usuario.getText().toString().equals("estudiante2020") && contrasenia.getText().toString().equals("uisrael2020")) {
             Toast.makeText(getApplicationContext(), "USUARIO CONECTADO: estudiante2020 ", Toast.LENGTH_LONG).show();
 
-
             Intent intentEnvio = new Intent(Login.this,Registro.class);
             intentEnvio.putExtra("datoUsuario", usuario.getText().toString());
             startActivity(intentEnvio);
-
 
         } else {
             Toast.makeText(getApplicationContext(), "DATO INCORRECTO", Toast.LENGTH_LONG).show();
