@@ -34,7 +34,7 @@ public class Registro extends AppCompatActivity {
     }
 
     public void Guardar (View v) {
-        Intent intentEnvio = new Intent(this, Resumen.class);
+        Intent intentEnvio = new Intent(Registro.this, Resumen.class);
 
 
         intentEnvio.putExtra("R1", ingreso.getText().toString());

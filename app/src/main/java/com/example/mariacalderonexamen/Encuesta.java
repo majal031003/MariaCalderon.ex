@@ -28,7 +28,7 @@ public class Encuesta extends AppCompatActivity {
     }
 
     public void Enviar (View v) {
-        Intent intentEnvio = new Intent(this, Resumen.class);
+        Intent intentEnvio = new Intent(Encuesta.this, Resumen.class);
 
         if (cba.isChecked() == true) {
 
