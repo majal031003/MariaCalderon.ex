@@ -43,8 +43,7 @@
             android:ems="10"
             android:gravity="center"
             android:hint="@string/text2"
-            android:inputType="textPersonName"
-            />
+            android:inputType="textPersonName" />
     </LinearLayout>
 
     <LinearLayout
