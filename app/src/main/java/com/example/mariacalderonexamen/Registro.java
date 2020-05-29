@@ -27,7 +27,7 @@ public class Registro extends AppCompatActivity {
         VC = 1800;
         T1= VC-A;
         B = T1/3;
-        B1 = ((B * 0.05)+B;
+        B1 = ((B * 0.05)+B);
         TOT = B1 + A;
         ingreso2.setText(Double.toString(B));
         ingreso3.setText(Double.toString(TOT));
